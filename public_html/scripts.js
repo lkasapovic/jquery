@@ -8,3 +8,25 @@ $("document").ready(function(){
     $(".lana").css("background-color", "cyan");
 });
 
+$("document").ready(function(){
+    
+    $('#oneButton').bind('click', alertButtonClick);
+    
+    $('#textBox1').bind('blur', onBlurEvent)
+                  .bind('focus', onFocusEvent)
+                  .bind('onmousedown', onMDownEvent)
+                  .bind('onmouseup', onMUpEvent)
+                  .bind('change', onChangeEvent);
+          
+});
+
+function alertButtonClick(){
+    alert("There was a button clicked");
+}
+
+function onBlurEvent() {
+    $("#second").html("You left the box");
+}
+
+
+
