@@ -5,28 +5,17 @@
  */
 
 $("document").ready(function(){
-    $(".lana").css("background-color", "cyan");
+    $('.lana').css("background-color", "cyan");
+    $('.div p:nth-child(first)').css('background-color','red');
+    $("h1").bind('mouseover',mouseOverMe).bind('mouseout',mouseOutMe);
 });
 
-$("document").ready(function(){
-    
-    $('#oneButton').bind('click', alertButtonClick);
-    
-    $('#textBox1').bind('blur', onBlurEvent)
-                  .bind('focus', onFocusEvent)
-                  .bind('onmousedown', onMDownEvent)
-                  .bind('onmouseup', onMUpEvent)
-                  .bind('change', onChangeEvent);
-          
-});
 
-function alertButtonClick(){
-    alert("There was a button clicked");
+function mouseOverMe(){
+    $("h1").html("MouseOn");
 }
 
-function onBlurEvent() {
-    $("#second").html("You left the box");
+function mouseOutMe(){
+    $("h1").html("MouseOff");
 }
-
-
 
