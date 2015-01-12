@@ -19,3 +19,18 @@ function mouseOutMe(){
     $("h1").html("MouseOff");
 }
 
+$("document").ready(function() {
+    
+    $('#replaceWHtml').bind('click',replaceWHtml);
+    $('#replaceWText').bind('click', replaceWText);
+    
+});
+
+function replaceWHtml() {
+    $('#h3Tag').html('<h6>Now I\'m an h6</h6>');
+}
+
+function replaceWText() {
+    $('#h3Tag').text('<h6>Now I\'m an h6</h6>');
+}
+
