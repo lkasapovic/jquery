@@ -2,18 +2,22 @@ $("document").ready(function() {
     $('.lana').css("background-color", "cyan");
 });
 
-$("document").ready(function() {
 
+
+//$('#superHumans').css('background-color', 'cyan');
+
+$("document").ready(function() {
+$('#superHumans').accordion({header: "h4"});
    
-    $('#replaceWHtml').bind('click', replaceWText);
+ //     $('#replaceWHtml').bind('click', replaceWText);
     
-    $('#randPara').bind('click', addAPara);
+ //     $('#randPara').bind('click', addAPara);
     
-    $('#removePara').bind('click', removeAPara);
+ //     $('#removePara').bind('click', removeAPara);
     
-    $('#hide').bind('click',hideThePage);
+ //     $('#hide').bind('click',hideThePage);
     
-    $('#show').bind('click',showThePage);
+//    $('#show').bind('click',showThePage);
     
 });
 
@@ -40,4 +44,4 @@ function addAPara (){
 function replaceWText (){
     $('#lana').text('<h6>UGH</h6>');
 }
-
+ 
