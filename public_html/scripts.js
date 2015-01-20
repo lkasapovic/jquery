@@ -1,24 +1,17 @@
 $("document").ready(function() {
     $('.lana').css("background-color", "cyan");
-});
 
-
-
-//$('#superHumans').css('background-color', 'cyan');
-
-$("document").ready(function() {
-$('#superHumans').accordion({header: "h4"});
-   
- //     $('#replaceWHtml').bind('click', replaceWText);
+    $("h1").bind('mouseover',mouseOverMe).bind('mouseout',mouseOutMe);
     
- //     $('#randPara').bind('click', addAPara);
+    $('#hide').bind('click', hideThePage);
     
- //     $('#removePara').bind('click', removeAPara);
+    $('#show').bind('click', showThePage);
     
- //     $('#hide').bind('click',hideThePage);
+     $('#show').css('visibility','hidden');
+     
+     
     
-//    $('#show').bind('click',showThePage);
-    
+    $('#accordian').accordion({header: "h4"});
 });
 
 function hideThePage(){
@@ -30,18 +23,5 @@ function hideThePage(){
 function showThePage(){
     $('div').hide('fold', {}, 2500);
     $('#show').show('puff', {}, 2500);
-}
-
-
-function removeAPara(){
-    $('#randPara').remove();
-}
-
-function addAPara (){
-    $('#randPara').append('<p>Hi</p>');
-}
-
-function replaceWText (){
-    $('#lana').text('<h6>UGH</h6>');
 }
  
