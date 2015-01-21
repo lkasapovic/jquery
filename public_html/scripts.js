@@ -22,7 +22,7 @@ $("document").ready(function() {
 });
 
 function hideThePage(){
-    $('#show').css('visibility', 'hidden');
+    $('#show').css('visibility', 'visible');
     $('div').hide('slide', {}, 2500);
     $('#show').show('fold', {}, 2500);
 }
